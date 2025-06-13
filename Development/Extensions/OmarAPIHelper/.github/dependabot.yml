@@ -1,0 +1,12 @@
+# File: .github/dependabot.yml
+version: 2
+updates:
+  # Check for updates to npm dependencies
+  - package-ecosystem: "npm"       # Use npm as the package manager
+    directory: "/"                # Root directory of the project
+    schedule:
+      interval: "daily"           # Check for updates daily
+    ignore:
+      - dependency-name: "glob"   # Example: ignore updates to "glob"
+        versions: ["<9.0.0"]      # Ignore versions less than 9.0.0
+  # Add more package ecosystems if necessary

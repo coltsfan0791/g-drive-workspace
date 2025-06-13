@@ -1,0 +1,30 @@
+{
+	"folders": [
+		{
+			"name": "🎮 Pokemon Nuzlocke Emulator",
+			"path": "./PokemonNuzlockeEmu"
+		},
+		{
+			"name": "🎮 GBA Emulator 2",
+			"path": "./GBAEmulator2"
+		}
+	],
+	"settings": {
+		"python.defaultInterpreterPath": "./PokemonNuzlockeEmu/.venv/Scripts/python.exe",
+		"python.testing.pytestEnabled": true,
+		"python.testing.pytestArgs": [
+			"tests"
+		],
+		"python.linting.enabled": true,
+		"python.formatting.provider": "black"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-python.python",
+			"ms-python.debugpy",
+			"ms-python.black-formatter",
+			"ms-python.flake8",
+			"ms-python.mypy-type-checker"
+		]
+	}
+}

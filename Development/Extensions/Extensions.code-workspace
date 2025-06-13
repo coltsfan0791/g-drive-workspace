@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"name": "🔧 Omar API Helper Extension",
+			"path": "./OmarAPIHelper"
+		}
+	],
+	"settings": {
+		"typescript.preferences.quoteStyle": "double",
+		"typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+		"editor.insertSpaces": false,
+		"editor.detectIndentation": false,
+		"npm.packageManager": "npm"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.vscode-typescript-next",
+			"ms-vscode.extension-test-runner",
+			"dbaeumer.vscode-eslint"
+		]
+	}
+}

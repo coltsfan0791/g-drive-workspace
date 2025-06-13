@@ -1,0 +1,151 @@
+{
+    "folders": [
+        {
+            "name": "ROM Hack Development",
+            "path": "./Games/Pokemon_References/ROM_Hacks"
+        },
+        {
+            "name": "ROM Hacking Tools", 
+            "path": "./Tools/ROM_Hacking"
+        },
+        {
+            "name": "Testing Scripts",
+            "path": "./Scripts"
+        },
+        {
+            "name": "Emulators",
+            "path": "./Tools"
+        }
+    ],
+    "settings": {
+        "files.associations": {
+            "*.gba": "binary",
+            "*.gbc": "binary", 
+            "*.gb": "binary",
+            "*.nds": "binary",
+            "*.ips": "binary",
+            "*.ups": "binary",
+            "*.xdelta": "binary",
+            "*.lua": "lua"
+        },
+        "files.exclude": {
+            "**/*.ss*": true,
+            "**/*.st*": true,
+            "**/save_*": true
+        },
+        "explorer.fileNesting.enabled": true,
+        "explorer.fileNesting.patterns": {
+            "*.gba": "*.ss*, *.st*, *.sgm, *.sav",
+            "*.gbc": "*.ss*, *.st*, *.sgm, *.sav", 
+            "*.gb": "*.ss*, *.st*, *.sgm, *.sav"
+        }
+    },
+    "tasks": {
+        "version": "2.0.0",
+        "tasks": [
+            {
+                "label": "Launch mGBA with ROM",
+                "type": "shell",
+                "command": "${workspaceFolder}/Tools/mGBA/mGBA-0.10.3-win64/mGBA.exe",
+                "args": ["${file}"],
+                "group": "test",
+                "presentation": {
+                    "echo": true,
+                    "reveal": "always",
+                    "focus": false,
+                    "panel": "new"
+                },
+                "problemMatcher": []
+            },
+            {
+                "label": "Launch BizHawk with ROM",
+                "type": "shell", 
+                "command": "${workspaceFolder}/Tools/BizHawk/EmuHawk.exe",
+                "args": ["${file}"],
+                "group": "test",
+                "presentation": {
+                    "echo": true,
+                    "reveal": "always", 
+                    "focus": false,
+                    "panel": "new"
+                },
+                "problemMatcher": []
+            },
+            {
+                "label": "Run ROM Hack Tester",
+                "type": "shell",
+                "command": "python",
+                "args": ["${workspaceFolder}/Scripts/Python/rom_hack_tester.py"],
+                "group": "test",
+                "presentation": {
+                    "echo": true,
+                    "reveal": "always",
+                    "focus": true,
+                    "panel": "new"
+                },
+                "problemMatcher": []
+            },
+            {
+                "label": "Quick Launch ROM Hack",
+                "type": "shell",
+                "command": "${workspaceFolder}/Scripts/PowerShell/launch_rom_hack.bat",
+                "group": "test", 
+                "presentation": {
+                    "echo": true,
+                    "reveal": "always",
+                    "focus": true,
+                    "panel": "new"
+                },
+                "problemMatcher": []
+            },
+            {
+                "label": "Validate ROM Hack (mGBA + Lua)",
+                "type": "shell",
+                "command": "${workspaceFolder}/Tools/mGBA/mGBA-0.10.3-win64/mGBA.exe",
+                "args": [
+                    "--lua", 
+                    "${workspaceFolder}/Scripts/Lua/rom_hack_validator.lua",
+                    "${file}"
+                ],
+                "group": "test",
+                "presentation": {
+                    "echo": true,
+                    "reveal": "always",
+                    "focus": true, 
+                    "panel": "new"
+                },
+                "problemMatcher": []
+            }
+        ]
+    },
+    "launch": {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "name": "Debug ROM with mGBA",
+                "type": "node",
+                "request": "launch",
+                "program": "${workspaceFolder}/Tools/mGBA/mGBA-0.10.3-win64/mGBA.exe",
+                "args": ["${file}"],
+                "console": "externalTerminal"
+            },
+            {
+                "name": "Test ROM Hack Suite",
+                "type": "python",
+                "request": "launch",
+                "program": "${workspaceFolder}/Scripts/Python/rom_hack_tester.py",
+                "console": "integratedTerminal",
+                "cwd": "${workspaceFolder}"
+            }
+        ]
+    },
+    "extensions": {
+        "recommendations": [
+            "ms-python.python",
+            "ms-vscode.hexeditor",
+            "sumneko.lua", 
+            "ms-vscode.powershell",
+            "formulahendry.auto-rename-tag"
+        ]
+    }
+}

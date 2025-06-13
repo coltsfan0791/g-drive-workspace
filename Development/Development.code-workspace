@@ -1,0 +1,63 @@
+{
+	"folders": [
+		{
+			"name": "🎮 Games",
+			"path": "./Games"
+		},
+		{
+			"name": "🐍 Python Projects",
+			"path": "./Python"
+		},
+		{
+			"name": "🔧 VS Code Extensions",
+			"path": "./Extensions"
+		},
+		{
+			"name": "📝 Scripts & Utilities",
+			"path": "./Scripts"
+		},
+		{
+			"name": "🛠️ Tools",
+			"path": "./Tools"
+		}
+	],
+	"settings": {
+		"powershell.buttons.showPanelMovementButtons": true,
+		"powershell.analyzeOpenDocumentsOnly": true,
+		"powershell.codeFormatting.autoCorrectAliases": true,
+		"powershell.codeFormatting.avoidSemicolonsAsLineTerminators": true,
+		"powershell.codeFormatting.trimWhitespaceAroundPipe": true,
+		"powershell.codeFormatting.useConstantStrings": true,
+		"powershell.codeFormatting.useCorrectCasing": true,
+		"powershell.codeFormatting.whitespaceBetweenParameters": true,
+		"powershell.debugging.createTemporaryIntegratedConsole": true,
+		"powershell.integratedConsole.forceClearScrollbackBuffer": true,
+		"powershell.integratedConsole.startInBackground": true,
+		"powershell.integratedConsole.suppressStartupBanner": true,
+		"powershell.pester.debugOutputVerbosity": "Detailed",
+		"editor.experimental.treeSitterTelemetry": true,
+		"editor.experimentalEditContextEnabled": true,
+		"editor.experimental.asyncTokenizationVerification": true,
+		"editor.experimental.asyncTokenizationLogging": false,
+		"editor.foldingImportsByDefault": true,
+		"editor.gotoLocation.alternativeDefinitionCommand": "editor.action.goToReferences",
+		"editor.gotoLocation.alternativeImplementationCommand": "editor.action.goToImplementation",
+		"editor.gotoLocation.alternativeReferenceCommand": "editor.action.goToReferences",
+		"editor.gotoLocation.alternativeTypeDefinitionCommand": "editor.action.goToTypeDefinition",
+		"python.defaultInterpreterPath": "./Python/*/venv/Scripts/python.exe",
+		"godot.editor.path": "./Tools/Godot_v4.3-stable_mono_win64/Godot_v4.3-stable_mono_win64.exe",
+		"files.associations": {
+			"*.gd": "gdscript",
+			"*.cs": "csharp"
+		}
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-python.python",
+			"ms-python.debugpy",
+			"geequlim.godot-tools",
+			"ms-vscode.powershell",
+			"ms-vscode.vscode-typescript-next"
+		]
+	}
+}

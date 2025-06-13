@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"name": "🎮 Pokemon D&D Hybrid",
+			"path": "./PokemonDnDHybrid"
+		}
+	],
+	"settings": {
+		"godot.editor.path": "../../Tools/Godot_v4.3-stable_mono_win64/Godot_v4.3-stable_mono_win64.exe",
+		"files.associations": {
+			"*.gd": "gdscript",
+			"*.cs": "csharp"
+		}
+	},
+	"extensions": {
+		"recommendations": [
+			"geequlim.godot-tools",
+			"ms-dotnettools.csharp"
+		]
+	}
+}
