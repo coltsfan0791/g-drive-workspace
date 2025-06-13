@@ -178,3 +178,11 @@ Thumbs.db
 # Development workspace specific
 */workspace.xml
 *.code-workspace.bak
+
+# PROBLEMATIC DIRECTORIES (Embedded Git Repositories with Issues)
+# These directories contain git repositories that cannot be cleanly added:
+# - Development/Games/Pokemon_References/CSharp_Projects/PKHeX/ (no commit checked out)
+# - Development/Games/Pokemon_References/Web_Games/Pokemon_Showdown_Web/ (no commit checked out)
+# These should be handled manually or as proper submodules if needed
+Development/Games/Pokemon_References/CSharp_Projects/
+Development/Games/Pokemon_References/Web_Games/
