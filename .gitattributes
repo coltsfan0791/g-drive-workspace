@@ -1,0 +1,113 @@
+# Git Attributes for G:\ Development Workspace
+# =============================================
+
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Source code
+*.py text eol=lf
+*.js text eol=lf
+*.ts text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.gd text eol=lf
+*.cs text eol=lf
+*.lua text eol=lf
+*.sh text eol=lf
+*.bat text eol=crlf
+*.ps1 text eol=crlf
+
+# Documentation
+*.txt text eol=lf
+*.rst text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.xml text eol=lf
+
+# Configuration files
+*.cfg text eol=lf
+*.conf text eol=lf
+*.ini text eol=crlf
+*.toml text eol=lf
+
+# Godot files
+*.tscn text eol=lf merge=ours
+*.tres text eol=lf merge=ours
+*.godot text eol=lf
+
+# Git
+.gitignore text eol=lf
+.gitattributes text eol=lf
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.bmp binary
+*.tiff binary
+*.svg binary
+
+# Audio files
+*.mp3 binary
+*.wav binary
+*.ogg binary
+*.flac binary
+
+# Video files
+*.mp4 binary
+*.avi binary
+*.mov binary
+*.mkv binary
+
+# Archives
+*.zip binary
+*.rar binary
+*.7z binary
+*.tar.gz binary
+*.tar binary
+*.gz binary
+
+# Executables
+*.exe binary
+*.dll binary
+*.so binary
+*.dylib binary
+
+# ROM files
+*.gba binary
+*.nds binary
+*.gb binary
+*.gbc binary
+*.smc binary
+*.sfc binary
+*.rom binary
+*.bin binary
+
+# Data files
+*.sqlite binary
+*.db binary
+
+# Font files
+*.ttf binary
+*.otf binary
+*.woff binary
+*.woff2 binary
+
+# Office documents
+*.doc binary
+*.docx binary
+*.xls binary
+*.xlsx binary
+*.ppt binary
+*.pptx binary
+*.pdf binary
+
+# Large data files - use Git LFS
+*.psd filter=lfs diff=lfs merge=lfs -text
+*.ai filter=lfs diff=lfs merge=lfs -text
+*.blend filter=lfs diff=lfs merge=lfs -text
+*.fbx filter=lfs diff=lfs merge=lfs -text
+*.obj filter=lfs diff=lfs merge=lfs -text
+*.3ds filter=lfs diff=lfs merge=lfs -text

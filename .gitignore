@@ -1,0 +1,180 @@
+# G:\ Development Workspace - Git Ignore File
+# ============================================
+
+# System and Windows specific
+System Volume Information/
+$RECYCLE.BIN/
+desktop.ini
+Thumbs.db
+ehthumbs.db
+*.tmp
+*.temp
+~$*
+
+# IDE and Editor files
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Compiled and Build outputs
+*.exe
+*.dll
+*.so
+*.dylib
+*.obj
+*.o
+*.a
+*.lib
+*.pdb
+*.exp
+*.ilk
+*.log
+*.tlog
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.pytest_cache/
+.coverage
+htmlcov/
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.eslintcache
+.nyc_output
+
+# Godot
+.godot/
+.import/
+export.cfg
+export_presets.cfg
+*.tmp
+*.translation
+
+# Game Assets (Large files)
+*.wav
+*.mp3
+*.ogg
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.iso
+*.zip
+*.rar
+*.7z
+*.tar.gz
+
+# ROM files and large game assets
+*.gba
+*.nds
+*.n64
+*.smc
+*.sfc
+*.gb
+*.gbc
+*.rom
+*.bin
+*/roms/
+*/ROMs/
+*/saves/
+*/save_backups/
+
+# Sprite collections (if too large)
+# Uncomment if sprite folders become too large for GitHub
+# */sprites/
+# */assets/sprites/
+
+# Emulator files
+*.state
+*.sav
+*.srm
+*.rtc
+*.cht
+
+# Development Tools
+*/Tools/BizHawk/
+*/Tools/mGBA/
+*/Godot_*/
+*/external/
+
+# Large data files
+*.sqlite
+*.db
+*.json.bak
+
+# Logs and temporary files
+*.log
+*.err
+*.out
+temp/
+tmp/
+
+# VS Code specific
+.vscode/settings.json
+.vscode/launch.json
+.vscode/extensions.json
+.vscode/tasks.json
+
+# Git specific
+.git/
+
+# Embedded Git Repositories (handle as submodules if needed)
+Development/Games/PokemonDnDHybrid/.git/
+Development/Games/Pokemon_References/CSharp_Projects/NHSE_Animal_Crossing/.git/
+Development/Games/Pokemon_References/CSharp_Projects/PKHeX/.git/
+
+# Or exclude entire embedded repos if they should be submodules
+# Development/Games/PokemonDnDHybrid/
+# Development/Games/Pokemon_References/CSharp_Projects/NHSE_Animal_Crossing/
+# Development/Games/Pokemon_References/CSharp_Projects/PKHeX/
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Development workspace specific
+*/workspace.xml
+*.code-workspace.bak
