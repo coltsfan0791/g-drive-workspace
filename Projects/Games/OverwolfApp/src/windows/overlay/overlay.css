@@ -1,0 +1,22 @@
+body {
+  background: transparent;
+}
+
+.overlay-card {
+  margin: 12px;
+  padding: 14px 16px;
+  background: rgba(27, 31, 42, 0.85);
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  backdrop-filter: blur(2px);
+}
+
+.overlay-header {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.muted {
+  color: var(--muted);
+  margin: 0;
+}
