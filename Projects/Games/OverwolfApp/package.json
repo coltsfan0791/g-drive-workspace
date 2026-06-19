@@ -1,0 +1,13 @@
+{
+  "name": "overwolf-app",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Overwolf overlay app scaffold with a desktop window and an in-game overlay window.",
+  "scripts": {
+    "lint": "eslint src",
+    "validate-manifest": "node -e \"JSON.parse(require('fs').readFileSync('manifest.json','utf8')); console.log('manifest.json is valid JSON')\""
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0"
+  }
+}

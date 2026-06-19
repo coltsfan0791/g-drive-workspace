@@ -1,0 +1,31 @@
+:root {
+  --bg: #1b1f2a;
+  --panel: #232838;
+  --accent: #2e78d2;
+  --text: #e7ebf2;
+  --muted: #9aa3b2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  color: var(--text);
+}
+
+button {
+  background: var(--accent);
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  padding: 8px 14px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(1.1);
+}

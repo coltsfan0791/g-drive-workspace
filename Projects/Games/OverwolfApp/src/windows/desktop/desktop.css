@@ -1,0 +1,36 @@
+body {
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.titlebar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 12px;
+  background: var(--panel);
+  -webkit-app-region: drag;
+}
+
+.titlebar .title {
+  font-weight: 600;
+}
+
+.titlebar .close {
+  -webkit-app-region: no-drag;
+  background: transparent;
+  font-size: 20px;
+  line-height: 1;
+  padding: 2px 8px;
+}
+
+.content {
+  flex: 1;
+  padding: 24px;
+}
+
+.muted {
+  color: var(--muted);
+}
